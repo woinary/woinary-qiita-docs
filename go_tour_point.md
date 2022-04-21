@@ -1,7 +1,10 @@
 <!--
-title: 私家版 Go言語のポイント
-tags: go,POEM,ポエム
+title:   私家版 Go言語のポイント
+tags:    Go,ポエム
+id:      efbaab07f95380e8296e
+private: false
 -->
+
 
 「[Welcome to a tour of Go](https://go-tour-jp.appspot.com/list)」のポイントを個人的にまとめたものになります[^1]。
 
@@ -441,13 +444,13 @@ import (
 
 func WordCount(s string) map[string]int {
     items := strings.Split(s, " ")
-    
+
     wc := make(map[string]int)
-    
+
     for _, v := range items {
         wc[v] ++
     }
-    
+
     return wc
 }
 
@@ -653,11 +656,11 @@ func (e ErrNegativeSqrt) Error() string {
 func Sqrt(x float64) (float64, error) {
     var z float64 = 1.0
       var lastValue = 0.0
-    
+
     if x < 0 {
         return 0, ErrNegativeSqrt(x)
     }
-    
+
       for i := 0; i < 20; i++ {
         z -= (z * z - x) / (2 * z)
           //fmt.Println(i, z)
@@ -672,7 +675,7 @@ func Sqrt(x float64) (float64, error) {
 func main() {
     var result float64
     var err error
-    
+
     fmt.Print("sqrt(2):")
     result, err = Sqrt(2)
     if err != nil {
@@ -680,7 +683,7 @@ func main() {
     } else {
         fmt.Println(result)
     }
-    
+
     fmt.Print("sqrt(-2):")
     result, err = Sqrt(-2)
     if err != nil {
@@ -725,13 +728,13 @@ func main() {
     var err error
     var mr MyReader
     size, err = mr.Read(b)
-    
+
     if err == nil {
         fmt.Printf("%s(%d)\n", b, size)
     } else {
         fmt.Println("read error.")
     }*/
-    
+
     reader.Validate(MyReader{})
 }
 ```
@@ -893,7 +896,7 @@ func Same(t1, t2 *tree.Tree) bool {
     ch2 := make(chan int)
     go Walk(t1, ch1)
     go Walk(t2, ch2)
-    
+
     for i := 0; i < 10; i++ {
         if <- ch1 != <- ch2 {
             return false
@@ -905,7 +908,7 @@ func Same(t1, t2 *tree.Tree) bool {
 func main() {
     ch := make(chan int) // チャンネルを生成
     go Walk(tree.New(1), ch)
-    
+
     // Exersize 1,2
     /*
     for i := 0; i < 10; i++ {
@@ -913,7 +916,7 @@ func main() {
         fmt.Print(<- ch)
     }
     fmt.Println("")*/
-    
+
     // Exercise 3,4
     fmt.Println(Same(tree.New(1), tree.New(1)))
     fmt.Println(Same(tree.New(1), tree.New(2)))
