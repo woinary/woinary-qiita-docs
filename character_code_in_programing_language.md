@@ -1,9 +1,10 @@
 <!--
 title:   プログラミング言語の文字コードの話
-tags:    unicode,POEM,ポエム
-id:
+tags:    unicode,ポエム
+id:      e3eb25e53a3b4a9a372f
 private: false
 -->
+
 # プログラミング言語の文字コードの話
 
 色々面倒くさい文字コードの話です。Unicodeの知識が前提になります。技術的なことは正解を先に見つけてしまったので、基本的に例によってポエムです。
@@ -114,7 +115,7 @@ package main
 import "fmt"
 func main(){
     message := "ABC123🇯🇵😀"
-    
+
     fmt.Println(len(message)) // -> 18
     fmt.Println(message[6:14]) // -> 🇯🇵
     fmt.Println(message[14:18]) // -> 😀
@@ -132,7 +133,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) throws Exception {
         String message = "ABC123🇯🇵😀";
-        
+
         System.out.println(message.length()); // -> 12
         System.out.println(message.substring(6, 10)); // -> 🇯🇵
         System.out.println(message.substring(10, 12)); // -> 😀
