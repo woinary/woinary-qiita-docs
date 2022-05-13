@@ -2,7 +2,7 @@
 title:   プログラミング言語の文字コードの話
 tags:    unicode,POEM,ポエム
 id:
-private: true
+private: false
 -->
 # プログラミング言語の文字コードの話
 
