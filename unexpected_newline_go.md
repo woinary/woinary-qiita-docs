@@ -1,8 +1,8 @@
 <!--
 title:   GoのScanfでunexpected newlineが出た話
-tags:    Go,ポエム
+tags:    Go,ポエム,POEM
 id:      8f6a5b87101672e3fe22
-private: true
+private: false
 -->
 
 
