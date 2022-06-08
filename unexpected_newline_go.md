@@ -1,9 +1,10 @@
 <!--
 title:   GoのScanfでunexpected newlineが出た話
-tags:    Go,ポエム,POEM
-id:
+tags:    Go,ポエム
+id:      8f6a5b87101672e3fe22
 private: true
 -->
+
 
 Goのコーディング練習も兼ねて、P社の、お題に沿って簡単なプログラムを作成するとレーティングされるアレをやってました。
 その中で、思いがけず「unexpected newline」エラーが発生してしまいました。
@@ -65,7 +66,7 @@ func main() {
 今度は問題ありません。
 
 ```sh
-% go run scanf_binary_newline.go 
+% go run scanf_binary_newline.go
 0101
 1010
 ```
