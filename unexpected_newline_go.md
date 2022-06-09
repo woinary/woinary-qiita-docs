@@ -1,11 +1,9 @@
 <!--
 title:   GoのScanfでunexpected newlineが出た話
-tags:    Go,ポエム,POEM
+tags:    Go,ポエム
 id:      8f6a5b87101672e3fe22
 private: false
 -->
-
-
 Goのコーディング練習も兼ねて、P社の、お題に沿って簡単なプログラムを作成するとレーティングされるアレをやってました。
 その中で、思いがけず「unexpected newline」エラーが発生してしまいました。
 まあ、知っている人は知ってそうなので例によってポエムです。
