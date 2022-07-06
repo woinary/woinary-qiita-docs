@@ -1,9 +1,10 @@
 <!--
 title:   プログラマとは何者なのか
-tags:    ポエム,プログラマ
-id:      
+tags:    プログラマ,ポエム
+id:      2839a9e2c953fcc7d9e1
 private: false
 -->
+
 
 ## TL;DR
 
